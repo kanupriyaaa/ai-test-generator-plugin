@@ -28,7 +28,7 @@ Example format:
 
 | TestId    | Action                             | Input              | Expected Result          |
 | --------- | ---------------------------------- | ------------------ | ------------------------ |
-| TC_CP_001 | Verify Product UID auto generation | Create new product | UID should auto generate |
+| TC_CP_001 | Verify Product ID auto generation | Create new product | ID should auto generate |
 
 2. Open IntelliJ.
 
