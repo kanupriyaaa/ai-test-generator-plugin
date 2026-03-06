@@ -1,50 +1,16 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.aiassistant.testgenerator</id>
-
-    <name>AI Test Generator</name>
-
-<vendor email="support@aitestgenerator.com"
-        url="https://github.com/yourrepo">
-
-Kanu Priya
-</vendor>
-
-    <idea-version since-build="231" until-build="251.*"/>
-<description>
-<![CDATA[
-        AI Test Generator helps QA engineers generate Playwright automation tests directly from Excel test case sheets.
-
-        Features:
-        • Upload Excel test cases
-        • AI-generated Playwright test methods
-        • Page Object style generation
-        • Insert generated code directly into editor
-        ]]>
-</description>
-    <change-notes>
-        <![CDATA[
-        Version 1.0
-        • Excel based AI test generation
-        • Playwright Java test generation
-        • IntelliJ tool window integration
-        ]]>
-    </change-notes>
+    <id>com.github.kanupriyaaa.aitestgeneratorplugin</id>
+    <name>ai-test-generator-plugin</name>
+    <vendor>kanupriyaaa</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="org.jetbrains.plugins.template.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="org.jetbrains.plugins.template.startup.MyProjectActivity" />
-        <toolWindow
-                id="AI Test Generator"
-                anchor="right"
-                icon="/icons/aiToolWindow.svg"
-                factoryClass="com.aiassistant.toolwindow.AITestGeneratorToolWindowFactory"/>
-
-
+        <toolWindow factoryClass="com.github.kanupriyaaa.aitestgeneratorplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <postStartupActivity implementation="com.github.kanupriyaaa.aitestgeneratorplugin.startup.MyProjectActivity" />
     </extensions>
     <actions>
 
