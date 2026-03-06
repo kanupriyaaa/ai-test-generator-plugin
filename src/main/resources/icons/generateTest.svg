@@ -1,0 +1,29 @@
+<svg width="16" height="16" viewBox="0 0 16 16"
+     xmlns="http://www.w3.org/2000/svg">
+
+    <!-- document -->
+    <rect x="2" y="2" width="9" height="12" rx="1"
+          fill="#6C707E"/>
+
+    <!-- lines -->
+    <rect x="4" y="5" width="5" height="1"
+          fill="white"/>
+    <rect x="4" y="7" width="5" height="1"
+          fill="white"/>
+    <rect x="4" y="9" width="5" height="1"
+          fill="white"/>
+
+    <!-- AI spark -->
+    <circle cx="12.5" cy="11.5" r="2.5"
+            fill="#4CAF50"/>
+
+    <text x="12.5"
+          y="12.5"
+          font-size="2.5"
+          text-anchor="middle"
+          fill="white"
+          font-family="Arial">
+        AI
+    </text>
+
+</svg>
