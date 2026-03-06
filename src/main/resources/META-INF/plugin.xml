@@ -12,4 +12,25 @@
         <toolWindow factoryClass="com.github.kanupriyaaa.aitestgeneratorplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
         <postStartupActivity implementation="com.github.kanupriyaaa.aitestgeneratorplugin.startup.MyProjectActivity" />
     </extensions>
+    <actions>
+
+
+            <action id="GenerateTestAction"
+                    class="com.aiassistant.actions.GenerateTestAction"
+                    text="Generate Test From Excel"
+                    description="Generate test code">
+
+                <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+
+            </action>
+        <action id="GenerateTestFromSelection"
+                class="com.aiassistant.actions.GenerateTestAction"
+                text="Generate Playwright Test from Selection"
+                description="Generate Playwright test using AI from selected text"
+                icon="/icons/generateTest.svg">
+<!--                icon="resources/resourcesicons/">-->
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+
+    </actions>
 </idea-plugin>
